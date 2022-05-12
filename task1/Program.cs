@@ -7,9 +7,12 @@
 
 int number = new Random().Next(10, 100);
 Console.WriteLine($"Number = {number}");
-int firstDigit = number / 10;
-int secondDigit = number % 10;
-Console.WriteLine($"Number 1 = {firstDigit}");
-Console.WriteLine($"Number 2 = {secondDigit}");
+int maxNum = FindMaxNumber(number);
+Console.WriteLine($"Max = {maxNum}");
 
-Console.WriteLine(firstDigit > secondDigit ? $"Max = {firstDigit}" : $"max = { secondDigit}");
+int FindMaxNumber(int num)
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
+}
