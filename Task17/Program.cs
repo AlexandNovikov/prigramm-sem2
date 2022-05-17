@@ -1,4 +1,10 @@
-﻿
+﻿//         ^
+//      2  |   1
+//         |
+// --------+--------
+//         |
+//     3   |   4
+
 Console.WriteLine("Введите координату X: ");
 int x = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите координату Y: ");
